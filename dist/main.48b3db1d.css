@@ -8,6 +8,7 @@ body {
   background: linear-gradient(#2c2d3f, #3f4164);
   font-family: "Ubuntu", sans-serif;
   color: white;
+  line-height: 1.6;
 }
 
 h1,
@@ -15,6 +16,7 @@ h2,
 h3,
 h4 {
   font-family: "Overpass", sans-serif;
+  letter-spacing: 2px;
 }
 
 img {
@@ -28,6 +30,110 @@ ul {
 a {
   text-decoration: none;
   color: white;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  padding: 0.5em 1.5em;
+  border-radius: 100px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+
+/****************
+        Nav
+*****************/
+.logo {
+  width: 25%;
+}
+
+nav {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0 1em 0;
+}
+nav hr {
+  color: #ffffff3b;
+}
+
+.nav {
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  background: white;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(150%);
+}
+.nav.active {
+  transform: translateX(0);
+}
+.nav .nav-item {
+  margin: 1em 0 0.5em 0;
+}
+.nav .nav-link {
+  color: #25252d;
+  display: inline-block;
+  padding: 0.5em;
+}
+
+.nav-primary .menu-main {
+  position: relative;
+}
+.nav-primary .menu-main:hover .menu-sub {
+  display: block;
+  margin: 0.5em 0;
+}
+.nav-primary .menu-sub {
+  display: none;
+  position: relative;
+  left: 2rem;
+  background: #f3f3f3;
+  border-radius: 3px;
+  width: 80%;
+  padding-bottom: 0.5em;
+}
+.nav-primary .sub-link {
+  display: inline-block;
+  width: 100%;
+  color: #1f3f5b;
+  margin: 1em 0 0.5em 0;
+}
+.nav-primary .sub-link:hover {
+  color: #c8c8cb;
+}
+
+.nav-secondary {
+  padding-bottom: 1em;
+}
+.nav-secondary .btn-gradient {
+  background: linear-gradient(#ff8f70, #ff3d54);
+  color: white;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  width: 31px;
+}
+.nav-toggle .close-hamburger {
+  display: none;
+}
+.nav-toggle.active .hamburger {
+  display: none;
+}
+.nav-toggle.active .close-hamburger {
+  display: block;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

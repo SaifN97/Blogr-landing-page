@@ -1,0 +1,99 @@
+@use "colors" as *;
+
+/****************
+        Nav
+*****************/
+
+.logo {
+  width: 25%;
+}
+
+nav {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0 1em 0;
+  hr {
+    color: #ffffff3b;
+  }
+}
+
+.nav {
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  background: $white;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(150%);
+  &.active {
+    transform: translateX(0);
+  }
+  .nav-item {
+    margin: 1em 0 0.5em 0;
+  }
+  .nav-link {
+    color: $very-dark-black-blue;
+    display: inline-block;
+    padding: 0.5em;
+  }
+}
+
+.nav-primary {
+  .menu-main {
+    position: relative;
+    &:hover {
+      .menu-sub {
+        display: block;
+        margin: 0.5em 0;
+      }
+    }
+  }
+  .menu-sub {
+    display: none;
+    position: relative;
+    left: 2rem;
+    background: rgb(243, 243, 243);
+    border-radius: 3px;
+    width: 80%;
+    padding-bottom: 0.5em;
+  }
+  .sub-link {
+    display: inline-block;
+    width: 100%;
+    color: $very-dark-blue;
+    margin: 1em 0 0.5em 0;
+    &:hover {
+      color: $grayish-blue;
+    }
+  }
+}
+
+.nav-secondary {
+  padding-bottom: 1em;
+  .btn-gradient {
+    background: $background-gradient;
+    color: white;
+  }
+}
+
+.nav-toggle {
+  cursor: pointer;
+
+  width: 31px;
+  .close-hamburger {
+    display: none;
+  }
+  &.active {
+    .hamburger {
+      display: none;
+    }
+    .close-hamburger {
+      display: block;
+    }
+  }
+}
