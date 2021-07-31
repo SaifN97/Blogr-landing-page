@@ -1,5 +1,10 @@
 @use "colors" as *;
-
+.desktop {
+  display: none;
+}
+.block {
+  display: block;
+}
 /****************
         Nav
 *****************/
@@ -9,12 +14,13 @@
 }
 
 nav {
-  width: 90%;
+  overflow: hidden;
+  width: 85%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 0 1em 0;
+  padding: 3.5em 0 3.1em 0;
   hr {
     color: #ffffff3b;
   }
@@ -75,10 +81,6 @@ nav {
 
 .nav-secondary {
   padding-bottom: 1em;
-  .btn-gradient {
-    background: $background-gradient;
-    color: white;
-  }
 }
 
 .nav-toggle {
@@ -94,6 +96,161 @@ nav {
     }
     .close-hamburger {
       display: block;
+    }
+  }
+}
+
+/****************
+        Hero
+*****************/
+
+header {
+  position: relative;
+  background: url("../images/bg-pattern-intro.svg") no-repeat -20rem -15rem /
+      cover,
+    linear-gradient(to bottom right, $very-light-red-2, $light-red-2) no-repeat
+      center center/cover;
+  border-bottom-left-radius: 100px;
+  background-size: 350%, 100%;
+}
+
+.hero {
+  padding: 3.6em 0 9.5em 0;
+  text-align: center;
+  .hero-text {
+    h1 {
+      font-size: 2.1rem;
+    }
+    p {
+      padding: 1em 2em 1.8em 1em;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .hero-links {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+/****************
+        Intro
+        *****************/
+
+.intro {
+  color: black;
+  .intro-title {
+    color: $very-dark-blue;
+    padding: 5.8em 0 3em 0;
+    font-size: 1.1rem;
+  }
+  .img-col {
+    .mobile {
+      transform: scale(1.1);
+    }
+  }
+
+  .text-col {
+    h3 {
+      font-size: 1.7rem;
+      color: $very-dark-blue;
+      margin-top: 2.2em;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: $very-dark-grayish-blue;
+      font-weight: 300;
+      margin: 1em 0 4.5em 0;
+    }
+  }
+
+  //mid secion
+
+  .intro-mid {
+    position: relative;
+    margin-bottom: 5rem;
+    .text-col {
+      h3,
+      p {
+        color: white;
+        width: 80%;
+      }
+      h3 {
+        font-size: 2.4rem;
+        margin-top: 4.5em;
+        line-height: 1.2;
+      }
+      p {
+        font-size: 1rem;
+        color: $grayish-blue;
+      }
+
+      position: absolute;
+      z-index: -1;
+      height: 38rem;
+      top: 46%;
+      background: url(../images/bg-pattern-circles.svg) no-repeat,
+        $body-gradient no-repeat;
+      display: flex;
+      background-size: 165%, 100%;
+      background-position: center 1900%, center center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 100px 0 100px;
+    }
+  }
+
+  //bottom secion
+  .intro-bottom {
+    margin-top: 31rem;
+    .img-col {
+      .mobile {
+        transform: scale(1.3);
+      }
+    }
+  }
+}
+
+/****************
+        Footer
+*****************/
+
+footer {
+  background: $very-dark-black-blue;
+  border-radius: 0 100px 0 0;
+  font-family: "Ubuntu", sans-serif;
+
+  .footer-logo {
+    display: inline-block;
+    margin: 4.7rem 0;
+  }
+
+  .footer-menu {
+    h4 {
+      font-family: "Ubuntu", sans-serif;
+
+      margin-bottom: 2em;
+    }
+
+    h4 + h4 {
+      margin-top: 3em;
+    }
+    ul li:last-child {
+      padding-bottom: 3rem;
+    }
+    a {
+      display: inline-block;
+      margin-bottom: 1em;
+      color: $grayish-blue;
+      &:hover,
+      &focus {
+        text-decoration: underline;
+      }
     }
   }
 }
