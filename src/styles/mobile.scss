@@ -8,13 +8,14 @@
 /****************
         Nav
 *****************/
-
+main {
+  overflow: hidden;
+}
 .logo {
   width: 25%;
 }
 
 nav {
-  overflow: hidden;
   width: 85%;
   margin: 0 auto;
   display: flex;
@@ -28,34 +29,47 @@ nav {
 
 .nav {
   position: absolute;
-  left: 2.5rem;
-  top: 5rem;
+  left: 1.6rem;
+  top: 8rem;
+  opacity: 0;
   background: $white;
   border-radius: 5px;
-  width: 80%;
+  width: 86%;
   text-align: center;
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(150%);
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-150%);
   &.active {
     transform: translateX(0);
+    opacity: 1;
   }
   .nav-item {
-    margin: 1em 0 0.5em 0;
+    margin: 1.95em 0;
   }
   .nav-link {
-    color: $very-dark-black-blue;
+    font-weight: bolder;
+    color: $very-dark-blue;
     display: inline-block;
-    padding: 0.5em;
+    padding: 0 0.5em;
+    &:hover,
+    &:focus {
+      color: $grayish-blue;
+    }
   }
 }
 
 .nav-primary {
   .menu-main {
     position: relative;
+    img {
+      transition: transform 0.3s ease-in-out;
+    }
     &:hover {
+      img {
+        transform: rotate(180deg);
+      }
       .menu-sub {
         display: block;
-        margin: 0.5em 0;
+        margin: 1.3em 0;
       }
     }
   }
@@ -66,13 +80,15 @@ nav {
     background: rgb(243, 243, 243);
     border-radius: 3px;
     width: 80%;
-    padding-bottom: 0.5em;
+    padding: 0.5em;
+  }
+  .sub-item {
+    margin: 1.2em 0;
   }
   .sub-link {
     display: inline-block;
     width: 100%;
     color: $very-dark-blue;
-    margin: 1em 0 0.5em 0;
     &:hover {
       color: $grayish-blue;
     }
@@ -80,6 +96,8 @@ nav {
 }
 
 .nav-secondary {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 1em;
 }
 
@@ -106,12 +124,13 @@ nav {
 
 header {
   position: relative;
-  background: url("../images/bg-pattern-intro.svg") no-repeat -20rem -15rem /
-      cover,
-    linear-gradient(to bottom right, $very-light-red-2, $light-red-2) no-repeat
-      center center/cover;
-  border-bottom-left-radius: 100px;
+  background: url("../images/bg-pattern-intro.svg"),
+    linear-gradient(to bottom right, $very-light-red-2, $light-red-2);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -20rem -15rem, center center;
   background-size: 350%, 100%;
+  object-fit: cover, cover;
+  border-bottom-left-radius: 100px;
 }
 
 .hero {
@@ -233,7 +252,7 @@ footer {
   .footer-menu {
     h4 {
       font-family: "Ubuntu", sans-serif;
-
+      cursor: pointer;
       margin-bottom: 2em;
     }
 

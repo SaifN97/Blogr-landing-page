@@ -1,0 +1,246 @@
+@use "colors" as *;
+
+@media (min-width: 1000px) {
+  .block {
+    display: initial;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .logo {
+    width: 22%;
+  }
+  .container {
+    max-width: 85%;
+  }
+  /****************
+        Nav
+*****************/
+  nav {
+    padding: 3.3rem 0 4.4rem 0;
+  }
+  .nav {
+    transition: none;
+    font-family: "Ubuntu", sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: initial;
+    opacity: 1;
+    transform: translateX(0);
+    background: none;
+    hr {
+      display: none;
+    }
+    .nav-link {
+      color: white;
+    }
+  }
+  .nav-primary {
+    width: 32%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    .nav-item {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      position: relative;
+
+      .menu-sub {
+        font-size: 0.7rem;
+        transform: scale(1.4);
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding-left: 0.8em;
+        text-align: left;
+      }
+    }
+  }
+  .nav-secondary {
+    margin-right: 1.8em;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /****************
+          Hero
+  *****************/
+  header {
+    background: url("../images/bg-pattern-intro.svg"),
+      linear-gradient(to right, $very-light-red-2, $light-red-2);
+    background-size: 220%, 100%;
+    background-position: 25% 52%, 0% 0%;
+  }
+  .hero {
+    padding: 2.8em 0 9.5em 0;
+    .hero-text {
+      h1 {
+        font-size: 3.75rem;
+      }
+      p {
+        font-size: 1.25rem;
+        padding: 0;
+        margin: 0.8rem 0 2.8rem 0;
+      }
+    }
+    .hero-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  /****************
+          Intro
+  *****************/
+
+  .intro {
+    .intro-title {
+      font-size: 1.6rem;
+      padding: 0;
+      padding-top: 5.9em;
+      word-spacing: -3px;
+    }
+    .intro-top,
+    .intro-mid,
+    .intro-bottom {
+      text-align: left;
+      .img-col {
+        width: 40%;
+      }
+      .text-col {
+        width: 37%;
+      }
+    }
+
+    //Top
+    .intro-top {
+      .row {
+        flex-direction: row-reverse;
+      }
+      .img-col {
+        transform: translate(17%, -2%);
+        img {
+          transform: scale(1.6);
+        }
+      }
+      .text-col {
+        margin-top: 6.8em;
+        h3 {
+          margin: 0;
+          padding: 0;
+        }
+        p {
+          line-height: 1.6;
+          margin-top: 1.5em;
+          padding: 0;
+        }
+      }
+    }
+
+    //Mid
+    .intro-mid {
+      position: relative;
+      border: 1px solid red;
+      margin-top: 10.5rem;
+      height: 25rem;
+      background: url(../images/bg-pattern-circles.svg) no-repeat,
+        $body-gradient no-repeat;
+      border-radius: 0 100px 0 100px;
+
+      .text-col {
+        margin-bottom: 13.2em;
+        h3,
+        p {
+          color: white;
+          width: 100%;
+        }
+        h3 {
+          font-size: 2.4rem;
+          margin: 0;
+          line-height: 1.2;
+        }
+        p {
+          margin: 0;
+          margin-top: 1.5em;
+          font-size: 1rem;
+          color: $grayish-blue;
+        }
+
+        position: initial;
+        z-index: initial;
+        height: 100%;
+        background: none;
+      }
+      .img-col {
+        transform: translate(8rem, -4.3rem);
+      }
+    }
+
+    //Bottom
+    .intro-bottom {
+      margin-top: 19rem;
+      .text-col {
+        h3 {
+          margin: 0;
+        }
+        p {
+          margin: 1.6em 0 4.5em 0;
+        }
+      }
+      .img-col {
+        transform: translate(-14%, -8.5%);
+        img {
+          transform: scale(1.7);
+        }
+      }
+    }
+  }
+
+  //Footer
+
+  footer {
+    background: $very-dark-black-blue;
+    border-radius: 0 100px 0 0;
+    font-family: "Ubuntu", sans-serif;
+    padding-top: 5rem;
+    margin-top: 14.5rem;
+    .row {
+      align-items: flex-start;
+      justify-content: center;
+      gap: 7rem;
+      margin-right: 20rem;
+      .footer-logo {
+        width: 17.5%;
+      }
+      .footer-menu {
+        width: 55%;
+        text-align: left;
+      }
+    }
+    .footer-logo {
+      margin: 0;
+    }
+
+    .footer-menu {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

@@ -23,7 +23,8 @@
           <ul class="nav-primary">
             <li class="nav-item menu-main">
               <a class="nav-link" href="#">Product</a>
-              <img src="/icon-arrow-dark.c50463ee.svg" alt="toggle-icon">
+              <img class="mobile" src="/icon-arrow-dark.c50463ee.svg" alt="toggle-icon">
+              <img class="desktop" src="/icon-arrow-light.968c63b9.svg" alt="toggle-icon">
               <ul class="menu-sub">
                 <li class="sub-item">
                   <a class="sub-link" href="#">Overview</a>
@@ -45,7 +46,8 @@
 
             <li class="nav-item menu-main">
               <a class="nav-link" href="#">Company</a>
-              <img src="/icon-arrow-dark.c50463ee.svg" alt="toggle-icon">
+              <img class="mobile" src="/icon-arrow-dark.c50463ee.svg" alt="toggle-icon">
+              <img class="desktop" src="/icon-arrow-light.968c63b9.svg" alt="toggle-icon">
               <ul class="menu-sub">
                 <li class="sub-item"><a class="sub-link" href="#">About</a></li>
                 <li class="sub-item"><a class="sub-link" href="#">Team</a></li>
@@ -57,8 +59,9 @@
             </li>
 
             <li class="nav-item menu-main">
-              <a class="nav-link" href="#">Contact</a>
-              <img src="/icon-arrow-dark.c50463ee.svg" alt="toggle-icon">
+              <a class="nav-link" href="#">Connect</a>
+              <img class="mobile" src="/icon-arrow-dark.c50463ee.svg" alt="toggle-icon">
+              <img class="desktop" src="/icon-arrow-light.968c63b9.svg" alt="toggle-icon">
               <ul class="menu-sub">
                 <li class="sub-item">
                   <a class="sub-link" href="#">Contact</a>
@@ -74,13 +77,14 @@
           </ul>
           <hr>
           <ul class="nav-secondary">
-            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-            <li class="nav-item">
-              <a class="btn btn-gradient" href="#">Sign Up</a>
+            <li class="btn"><a class="nav-link" href="#">Login</a></li>
+            <li class="btn">
+              <a class="mobile btn btn-gradient" href="#">Sign Up</a>
+              <a class="desktop btn btn-light" href="#">Sign Up</a>
             </li>
           </ul>
         </div>
-        <div class="nav-toggle">
+        <div class="mobile nav-toggle">
           <img src="/icon-hamburger.cb455b0f.svg" class="hamburger" alt="hamburger">
           <img src="/icon-close.1add023a.svg" class="close-hamburger" alt="close-hamburger">
         </div>
@@ -146,7 +150,7 @@
             <div class="img-col">
               <img src="/illustration-phones.bfa3f527.svg" alt="phones">
             </div>
-            <div class="text-col">
+            <div class="container text-col">
               <h3>State of the Art Infrastructure</h3>
               <p>
                 With reliability and speed in mind, worldwide data centers
@@ -159,29 +163,31 @@
         </div>
 
         <div class="intro-bottom">
-          <div class="img-col">
-            <img src="/illustration-laptop-mobile.04bfc1ce.svg" alt="laptop" class="mobile">
-            <img src="/illustration-laptop-desktop.92ecfef9.svg" alt="laptop" class="desktop">
-          </div>
-          <div class="text-col">
-            <div class="col">
-              <h3>Free, open, simple</h3>
-              <p>
-                Blogr is a free and open source application backed by a large
-                community of helpful developers. It supports features such as
-                code syntax highlighting, RSS feeds, social media integration,
-                third-party commenting tools, and works seamlessly with Google
-                Analytics. The architecture is clean and is relatively easy to
-                learn.
-              </p>
+          <div class="row">
+            <div class="img-col">
+              <img src="/illustration-laptop-mobile.04bfc1ce.svg" alt="laptop" class="mobile">
+              <img src="/illustration-laptop-desktop.92ecfef9.svg" alt="laptop" class="desktop">
             </div>
-            <div class="col">
-              <h3>Powerful tooling</h3>
-              <p>
-                Batteries included. We built a simple and straightforward CLI
-                tool that makes customization and deployment a breeze, but
-                capable of producing even the most complicated sites.
-              </p>
+            <div class="container text-col">
+              <div class="col">
+                <h3>Free, open, simple</h3>
+                <p>
+                  Blogr is a free and open source application backed by a large
+                  community of helpful developers. It supports features such as
+                  code syntax highlighting, RSS feeds, social media integration,
+                  third-party commenting tools, and works seamlessly with Google
+                  Analytics. The architecture is clean and is relatively easy to
+                  learn.
+                </p>
+              </div>
+              <div class="col">
+                <h3>Powerful tooling</h3>
+                <p>
+                  Batteries included. We built a simple and straightforward CLI
+                  tool that makes customization and deployment a breeze, but
+                  capable of producing even the most complicated sites.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -190,10 +196,8 @@
 
     <footer>
       <div class="container row">
-        <div class="col">
-          <div class="footer-logo">
-            <img src="/logo.236e4034.svg" alt="Blogr">
-          </div>
+        <div class="col footer-logo">
+          <img src="/logo.236e4034.svg" alt="Blogr">
         </div>
         <div class="footer-menu">
           <div class="col">
