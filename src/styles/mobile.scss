@@ -192,6 +192,9 @@ header {
   .intro-mid {
     position: relative;
     margin-bottom: 5rem;
+    .container {
+      width: 100%;
+    }
     .text-col {
       h3,
       p {

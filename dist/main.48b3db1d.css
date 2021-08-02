@@ -245,6 +245,9 @@ header {
   position: relative;
   margin-bottom: 5rem;
 }
+.intro .intro-mid .container {
+  width: 100%;
+}
 .intro .intro-mid .text-col {
   position: absolute;
   z-index: -1;
@@ -470,10 +473,11 @@ footer .footer-menu a:hover, footer .footer-menu afocus {
   }
   .intro .intro-mid {
     position: relative;
-    border: 1px solid red;
     margin-top: 10.5rem;
     height: 25rem;
     background: url(/bg-pattern-circles.7ab6f122.svg) no-repeat, linear-gradient(#2c2d3f, #3f4164) no-repeat;
+    background-size: 70%, 100%;
+    background-position: -48% 81%, center center;
     border-radius: 0 100px 0 100px;
   }
   .intro .intro-mid .text-col {
@@ -504,6 +508,7 @@ footer .footer-menu a:hover, footer .footer-menu afocus {
   }
   .intro .intro-bottom {
     margin-top: 19rem;
+    padding-bottom: 7rem;
   }
   .intro .intro-bottom .text-col h3 {
     margin: 0;
@@ -522,17 +527,17 @@ footer .footer-menu a:hover, footer .footer-menu afocus {
     background: #25252d;
     border-radius: 0 100px 0 0;
     font-family: "Ubuntu", sans-serif;
-    padding-top: 5rem;
-    margin-top: 14.5rem;
+    padding-top: 4.3rem;
+    margin-top: 7.5rem;
   }
   footer .row {
     align-items: flex-start;
     justify-content: center;
-    gap: 7rem;
+    gap: 8rem;
     margin-right: 20rem;
   }
   footer .row .footer-logo {
-    width: 17.5%;
+    width: 17%;
   }
   footer .row .footer-menu {
     width: 55%;
@@ -543,7 +548,7 @@ footer .footer-menu a:hover, footer .footer-menu afocus {
   }
   footer .footer-menu {
     display: flex;
-    justify-content: space-between;
+    gap: 13rem;
   }
 }
 

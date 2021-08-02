@@ -157,11 +157,12 @@
     //Mid
     .intro-mid {
       position: relative;
-      border: 1px solid red;
       margin-top: 10.5rem;
       height: 25rem;
       background: url(../images/bg-pattern-circles.svg) no-repeat,
         $body-gradient no-repeat;
+      background-size: 70%, 100%;
+      background-position: -48% 81%, center center;
       border-radius: 0 100px 0 100px;
 
       .text-col {
@@ -196,6 +197,7 @@
     //Bottom
     .intro-bottom {
       margin-top: 19rem;
+      padding-bottom: 7rem;
       .text-col {
         h3 {
           margin: 0;
@@ -219,15 +221,15 @@
     background: $very-dark-black-blue;
     border-radius: 0 100px 0 0;
     font-family: "Ubuntu", sans-serif;
-    padding-top: 5rem;
-    margin-top: 14.5rem;
+    padding-top: 4.3rem;
+    margin-top: 7.5rem;
     .row {
       align-items: flex-start;
       justify-content: center;
-      gap: 7rem;
+      gap: 8rem;
       margin-right: 20rem;
       .footer-logo {
-        width: 17.5%;
+        width: 17%;
       }
       .footer-menu {
         width: 55%;
@@ -240,7 +242,7 @@
 
     .footer-menu {
       display: flex;
-      justify-content: space-between;
+      gap: 13rem;
     }
   }
 }
